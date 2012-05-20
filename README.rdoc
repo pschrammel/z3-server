@@ -9,7 +9,7 @@ Currently it's just a playing field to explore goliath and s3.
 === Installation
  git clone git://github.com/pschrammel/z3-server.git
  ruby config/boot.rb -s
- add z3test.localhost.localdomain z3test2.localhost.localdomain to you /ets/hosts file
+ add z3test.localhost.localdomain z3test2.localhost.localdomain to your /etc/hosts file
 
 
 === Usage
