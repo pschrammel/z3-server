@@ -1,0 +1,27 @@
+== Z3 Server
+
+=== About
+The Z3 Server is a simple S3 compatible server based on goliath and z3 core. 
+
+=== Status
+Currently it's just a playing field to explore goliath and s3. 
+
+=== Installation
+ git clone git://github.com/pschrammel/z3-server.git
+ ruby config/boot.rb -s
+ add z3test.localhost.localdomain z3test2.localhost.localdomain to you /ets/hosts file
+
+
+=== Usage
+
+Now you should have a running s3 compatible webserver on port 9000.
+Opening http://z3test.localhost.localdomain:9000/note2.txt in your browser will show you some data.
+Have a look at filled_memory_backend.rb for credentials.
+
+The core s3 features get/put/delete should be working. You can even run s3fs on top of it:
+  s3fs z3test trash/z3test -o url="http://localhost.localdomain:9000/" -f -d -s
+
+=== TODO
+ A lot.
+
+
